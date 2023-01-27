@@ -12,9 +12,6 @@ ADD https://github.com/OldUnreal/UnrealTournamentPatches/releases/download/v469c
 RUN tar xjvf OldUnreal-UTPatch469c-Linux-amd64.tar.bz2
 RUN rm OldUnreal-UTPatch469c-Linux-amd64.tar.bz2
 
-WORKDIR /
-
 COPY entrypoint.sh /
-RUN chmod 777 entrypoint.sh
-
-ENTRYPOINT [ "/entrypoint.sh" ]
+RUN chmod 777 /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
