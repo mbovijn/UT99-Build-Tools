@@ -1,4 +1,4 @@
 docker buildx build \
-    --platform linux/amd64 \
+    --platform linux/i386 \
     --tag fulcrum/ut99-build-tools \
     ./src
